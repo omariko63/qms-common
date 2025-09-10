@@ -68,7 +68,8 @@ public class JwtUtil {
     private SecretKey getSigningKey() {
         return Keys.hmacShaKeyFor(secret.getBytes(StandardCharsets.UTF_8));
     }
-    public boolean isRefreshTokenValid(String token, org.springframework.security.core.userdetails.UserDetails user) {
-        return !isTokenExpired(token) && extractUsername(token).equals(user.getUsername());
+
+    public boolean isRefreshTokenValid(String token, String username) {
+        return !isTokenExpired(token) && extractUsername(token).equals(username);
     }
 }
