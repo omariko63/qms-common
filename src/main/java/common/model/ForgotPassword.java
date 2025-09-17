@@ -1,6 +1,5 @@
 package common.model;
 
-import common.model.User;
 import jakarta.persistence.*;
 import lombok.*;
 

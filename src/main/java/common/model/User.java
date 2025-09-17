@@ -1,6 +1,5 @@
 package common.model;
 
-import common.model.ForgotPassword;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import lombok.Data;
